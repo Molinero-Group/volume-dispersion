@@ -135,7 +135,7 @@ if option==1:
 if option==2:
    D_dist = np.linspace(start=0, stop=user_mode * 50, num=npoints)
    freq_D_dist=Gaussian_PDF(D_dist,user_mode,user_scale); ii = np.isnan(freq_D_dist); freq_D_dist[ii] = 0
-   ax.plot(volume_dist*2,freq_volume_dist,'-',color='red')
+   ax.plot(D_dist*2,freq_D_dist,'-',color='red')
    ax.set_xlim([0, user_mode + 2 * user_mode])
 if option==3:
    D_dist = np.linspace(start=0, stop=shape_parameter * 20, num=npoints)
