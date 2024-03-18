@@ -48,17 +48,17 @@ Colaboratory, or [Colab](https://colab.research.google.com/?utm_source=scs-index
 
 To use it, follow the steps:
 
-- download the directory HUB-forward (or HUB-backward), and then upload it in a **Google drive** directory;
+- download the directory AINTBAD (or IPA), and then upload it in a **Google drive** directory;
 
-- inside the directory, click on "add more apps",
+- inside the directory, click on "add more apps" if you do not see Colaboratory,
 
-![image](https://user-images.githubusercontent.com/60315074/199114124-7ffb328d-dd1d-44f4-9d04-246bba6f7538.png)
+<img width="1528" alt="image" src="https://github.com/Molinero-Group/volume-dispersion/assets/60315074/30be9f33-4fe8-4254-84da-53a7c0ae1d5a">
 
 - type *colaboratory* and install it
 
 <img width="969" alt="image" src="https://user-images.githubusercontent.com/60315074/184701819-8e4baaf3-f2b7-47d2-b067-bb3947151fba.png">
 
-- open the Python notebook HUB-forward.ipynb (or HUB-backward.ipynb)
+- open the Python notebook AINTBAD_code.ipynb (or IPA_code.ipynb)
 
 <img width="848" alt="image" src="https://user-images.githubusercontent.com/60315074/199114807-10b687f2-4221-444b-a48f-0b299eb307fb.png">
 
@@ -70,25 +70,19 @@ To use it, follow the steps:
 
 # Output data
 
-After answering all of these questions, the HUB-forward code will generate in the same directory a few files in .pdf and .txt extensions: the underlying and the concentration-dependent distributions, the fraction of frozen droplets $f_{ice} (T)$ and the cumulative freezing spectrum $N_m (T)$.
-
-After answering a series of questions, HUB-backward will generate a few files in .pdf and .txt extensions: a spline fit of the input data, the optimized cumulative freezing spectrum $N_m (T)$ data, and the optimized differential freezing spectrum $n_m (T)$.
+After answering all of these questions, the AINTBAD and IPA code will generate in the same directory a few files in .pdf and .txt extensions.
 
 # Examples used as an input
 
-HUB-backward requires an input file located in the directory called input that has to be located in the same directory as the code. The file has to be a text format .txt, the first column is temperature, and the second column is $N_m (T)$ or $f_{ice} (T)$. 
+AINTBAD code requires an input file located in the directory called input that has to be located in the same directory as the code. The file has to be a text format .txt.
 
 Examples are located inside the input directory. \
-The input data used as examples for the HUB-backward code are not our own, and were obtained from the following sources:\
+The input data used as examples for the codes are not our own, and were obtained from the following sources:\
 Nm_bacteria.txt (Schwidetzky et al., 2021) DOI: [10.1021/acs.jpclett.1c03118](https://doi.org/10.1021/acs.jpclett.1c03118)\
-Nm_fusarium_kunert2019_strain_3-68.txt (Kunert et al., 2019) DOI: [10.5194/bg-16-4647-2019](https://doi.org/10.5194/bg-16-4647-2019)\
-Nm_pollen_thesis.txt (Dreischmeier, 2019) DOI: [10.4119/unibi/2907691](https://doi.org/10.4119/unibi/2907691)\
-Nm_pH_6p2.txt, Nm_pH_5p6.txt and Nm_pH_4p4.txt (Lukas et al., 2020) DOI: [10.1021/jacs.9b13069](https://doi.org/10.1021/jacs.9b13069)\
-fractionofice_cholesterol_fig10.txt and fractionofice_cholesterol_fig13.txt (Zhang and Maeda, 2022) DOI: [10.1016/j.ces.2022.118017](https://doi.org/10.1016/j.ces.2022.118017)
 
 # Acknowledgements 
 
-I. de A. R and V. M. gratefully acknowledge support by AFOSR through MURI Award No. FA9550-20-1-0351. K. M. acknowledges support by the National Science Foundation under Grant No. (NSF 2116528) and from the Institutional Development Awards (IDeA) from the National Institute of General Medical Sciences of the National Institutes of Health under Grants #P20GM103408, P20GM109095.
+The authors gratefully acknowledge support by AFOSR through MURI Award No. FA9550-20-1-0351. 
 
 # License
 
