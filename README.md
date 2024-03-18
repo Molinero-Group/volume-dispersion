@@ -60,7 +60,7 @@ To use it, follow the steps:
 
 - open the Python notebook AINTBAD_code.ipynb (or IPA_code.ipynb)
 
-<img width="848" alt="image" src="https://user-images.githubusercontent.com/60315074/199114807-10b687f2-4221-444b-a48f-0b299eb307fb.png">
+![image](https://github.com/Molinero-Group/volume-dispersion/assets/60315074/6bb6fc50-c672-4299-9abe-c311abdf79bd)
 
 # How to Run the Project
 
