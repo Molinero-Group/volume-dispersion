@@ -1,5 +1,3 @@
-ADD ZENODO LINK XXX
-
 Table of contents
 =================
 
@@ -69,10 +67,10 @@ After answering all of these questions, the AINTBAD and IPA code will generate i
 # Examples used as an input
 
 AINTBAD code requires an input file located in the directory called input that has to be located in the same directory as the code. The file has to be a text format .txt.
-
 Examples are located inside the input directory. \
 The input data used as examples for the codes are not our own, and were obtained from the following sources:\
-Nm_bacteria.txt (Schwidetzky et al., 2021) DOI: [10.1021/acs.jpclett.1c03118](https://doi.org/10.1021/acs.jpclett.1c03118)\
+Atkinson2016_3p8_6p2.txt, Atkinson2016_6p2_8p8.txt, Atkinson2016_8p8_11p3.txt, Atkinson2016_11p3_13p8.txt, Atkinson2016_13p8_16p3.txt, Atkinson2016_16p3_18p8.txt (Atkinson et al., 2016) DOI: [10.1021/acs.jpca.6b03843](https://pubs.acs.org/doi/10.1021/acs.jpca.6b03843)\
+Shardt2022_75_0p1.txt, Shardt2022_75_1p0.txt, Shardt2022_100_0p1.txt, Shardt2022_100_1p0.txt (Shardt et al. 2022) DOI: [10.1039/D2CP03896J] (https://doi.org/10.1039/D2CP03896J )
 
 # Acknowledgements 
 
@@ -80,5 +78,5 @@ The authors gratefully acknowledge support by AFOSR through MURI Award No. FA955
 
 # License
 
-The details on the license are shown in [LICENSE](https://github.com/Molinero-Group/underlying-distribution/blob/main/LICENSE).
+The details on the license are shown in [LICENSE](https://github.com/Molinero-Group/volume-dispersion/blob/main/LICENSE).
 
