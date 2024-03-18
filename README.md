@@ -7,7 +7,6 @@ Table of contents
 <!--ts-->
    * [Purpose of the codes](#purpose-of-the-codes)
    * [How to cite](#how-to-cite)
-   * [General idea](#general-idea)
    * [How to Install the Project](#how-to-install-the-project)
       * [Running in a local installation](#running-in-a-local-installation)
       * [Running on Google drive](#running-on-google-drive)
@@ -20,30 +19,15 @@ Table of contents
 
 # Purpose of the codes
 
-We implemented the numerical integration in Equation 7 and analytical model of Equation 8 in an python code to estimate $A$, $B$ and $J$ from experimental drop-freezing data. The code outputs the parameters $A$ and $B$. These are used to compute the nucleation barriers $\Delta G$, the temperature that corresponds to 50\% of frozen droplets $T_{50}$, and the homogeneous nucleation rate evaluated at $T_{50}$.
+The AINTBAD (Analysis of Ice nucleation Temperature for $B$ and $A$ Determination) includes the numerical integration in Equation 7 and the analytical model of Equation 8 in an python code to estimate $A$, $B$ and $J$ from experimental drop-freezing data. The code outputs the parameters $A$ and $B$. These are used to compute the nucleation barriers $\Delta G$, the temperature that corresponds to 50\% of frozen droplets $T_{50}$, and the homogeneous nucleation rate evaluated at $T_{50}$.
 
 The code IPA (Inhomogeneous Poisson Analysis) is capable of taking various parametrizations for the homogeneous nucleation rate $J_{hom}(T)$, the droplet size distributions (Gaussian, Gamma, uniform, exponential, etc.), and cooling rates to compute the survival probability or fraction of frozen droplets. We use the nucleation rate data vs temperature as the input to compute the survival probability.
 
 # How to cite
 
-This code is the active version of the code archived here and documented in de Almeida Ribeiro, Meister & Molinero, ["HUB: a method to model and extract the distribution of ice nucleation temperatures from drop-freezing experiments"](https://chemrxiv.org/engage/chemrxiv/article-details/63691c92b58850396f407923), DOI: 10.26434/chemrxiv-2022-ddzv8 
+This code is the active version of the code archived here and documented in Addula, de Almeida Ribeiro, Molinero & Peters, ["Ice nucleation from drop-freezing experiments: Impact of droplet volume dispersion and cooling rates"](https://chemrxiv.org/engage/chemrxiv/article-details/63691c92b58850396f407923), DOI: 10.26434/chemrxiv-2022-ddzv8 
 
-You are welcome to use and distribute this code as you see fit, but it remains the intellectual property of the authors and must be cited appropriately (please cite the paper). Direct any questions about this code to: Ingrid de A. Ribeiro (ingrid.ribeiro@utah.edu), or create an issue in this Github repository.
-
-# General idea
-
-HUB-forward predicts $f_{ice} (T)$ and $N_m (T)$ from a proposed distribution of IN temperatures.
-The underlying distribution $P_u(T)$ or the differential freezing spectrum $n_m (T)$ is a mixture of normalized probability distribution functions: 
-
-$P_u(T) = c_1 * P_1(T) + c_2 * P_2(T)  + c_3 * P_3(T) +  ... +  c_p * P_p(T)$ 
-
-where $p$ is the **number of sub populations** or classes, $c_1, c_2, c_3, \ ..., c_p$ are the **weights** such that $c_1 + c_2 + c_3 \ ... + \ c_p = 1$, and $P_1(T), P_2(T), P_3(T), \ ..., P_p(T)$ represent normalized Gaussian distributions of each sub population of ice nucleators (INs). 
-
-Each distribution $P_i(T)$ is defined by a set of parameters: 
-- the **mode** $T_{mode,i}$ which is the  most commonly observed value in a set of data, i.e. the x-axis location of the highest peak in that sub population; 
-- the **scaling factor** $s_{i}$ which controls the spread of the distribution.
-
-HUB-backward uses a non-linear optimization method to find the differential freezing spectrum $n_m (T)$ (as a combination of Gaussian distributions) that best represents the experimental target cumulative freezing spectrum $N_m (T)$ or fraction of frozen droplets $f_{ice} (T)$ in the experiments. 
+You are welcome to use and distribute this code as you see fit, but it remains the intellectual property of the authors and must be cited appropriately (please cite the paper). Direct any questions about this code to: Ravi Addula (raddula@illinois.edu) and Ingrid de A. Ribeiro (ingrid.ribeiro@utah.edu), or create an issue in this Github repository.
 
 -----
 # How to Install the Project
@@ -51,11 +35,11 @@ HUB-backward uses a non-linear optimization method to find the differential free
 
 Launch with:
 ```
-python HUB-forward.py
+python AINTBAD_CODE.py
 ```
 or
 ```
-python HUB-backward.py
+python IPA_CODE.py
 ```
 
 ## Running on Google drive
