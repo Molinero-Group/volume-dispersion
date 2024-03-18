@@ -10,7 +10,6 @@ Table of contents
    * [How to Install the Project](#how-to-install-the-project)
       * [Running in a local installation](#running-in-a-local-installation)
       * [Running on Google drive](#running-on-google-drive)
-   * [How to Run the Project](#how-to-run-the-project)
    * [Output data](#output-data)
    * [Examples used as an input](#examples-used-as-an-input)
    * [Acknowledgements](#acknowledgements)
@@ -58,15 +57,11 @@ To use it, follow the steps:
 
 <img width="969" alt="image" src="https://user-images.githubusercontent.com/60315074/184701819-8e4baaf3-f2b7-47d2-b067-bb3947151fba.png">
 
-- open the Python notebook AINTBAD_code.ipynb (or IPA_code.ipynb)
+- open the Python notebook AINTBAD_code.ipynb (or IPA_code.ipynb). You need to check the path to your files.
+  Run it by clicking on the play icon and allow the notebook to access your Google Drive files.
+  While the code is executing, a series of questions will appear.
 
 ![image](https://github.com/Molinero-Group/volume-dispersion/assets/60315074/6bb6fc50-c672-4299-9abe-c311abdf79bd)
-
-# How to Run the Project
-
-- run it by clicking on the play icon and allow the notebook to access your Google Drive files. While the code is executing, a series of questions will appear,
-
-<img width="613" alt="image" src="https://user-images.githubusercontent.com/60315074/199116848-1bd67052-2f33-456f-8005-598beb18a1c0.png">
 
 # Output data
 
