@@ -18,9 +18,11 @@ Table of contents
    * [License](#license)
 <!--te-->
 
-# Purpose of the code
+# Purpose of the codes
 
-Code that predicts the outcome of drop freezing experiments and apparent nucleation barriers for any arbitrary distribution of droplet volumes.
+We implemented the numerical integration in \cref{eq:prob2} and analytical model of \cref{eq:analy} in an python code to estimate $A$, $B$ and $J$ from experimental drop-freezing data. The code outputs the parameters $A$ and $B$ from \cref{eq:prob2}. These are used to compute the nucleation barriers $\Delta G$, the temperature that corresponds to 50\% of frozen droplets $T_{50}$, and the homogeneous nucleation rate evaluated at $T_{50}$ using $J_{hom}^{model}(\delta_T)=A \ e^{-B/[(1-\delta_T)\delta_T^2]}$.
+
+The code IPA (Inhomogeneous Poisson Analysis) is capable of taking various parametrizations for the homogeneous nucleation rate $J_{hom}(T)$, the droplet size distributions (Gaussian, Gamma, uniform, exponential, etc.), and cooling rates to compute the survival probability or fraction of frozen droplets.  is illustrated in \cref{fig:ratedata}. We use the nucleation rate data vs temperature as the input to compute the survival probability.
 
 # How to cite
 
