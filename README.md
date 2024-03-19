@@ -21,7 +21,7 @@ The code IPA (Inhomogeneous Poisson Analysis) is capable of taking various param
 
 # How to cite
 
-This code is the active version of the code archived here and documented in Addula, de Almeida Ribeiro, Molinero & Peters, Ice nucleation from drop-freezing experiments: Impact of droplet volume dispersion and cooling rates, DOI: XXX
+This code is the active version of the code archived here and documented in Addula, de Almeida Ribeiro, Molinero & Peters, Ice nucleation from drop-freezing experiments: Impact of droplet volume dispersion and cooling rates, [DOI: 10.26434/chemrxiv-2024-1vkn7](https://chemrxiv.org/engage/chemrxiv/article-details/65f893a7e9ebbb4db9f762a3)
 
 You are welcome to use and distribute this code as you see fit, but it remains the intellectual property of the authors and must be cited appropriately (please cite the paper). Direct any questions about this code to: Ravi Addula (raddula@illinois.edu) and Ingrid de A. Ribeiro (ingrid.ribeiro@utah.edu), or create an issue in this Github repository.
 
